@@ -1,14 +1,18 @@
 package com.cs61b.exercises;
 
+// interface
+import java.util.List;
+import java.util.Map;
+
 import java.util.ArrayList;
 import java.util.Arrays;
+
 import java.util.TreeMap;
-import java.util.HashMap;
 
 
 public class MapExercises {
-    public TreeMap<Character, Integer> letterToNum() {
-        TreeMap<Character, Integer> result = new TreeMap<Character, Integer>();
+    public Map<Character, Integer> letterToNum() {
+        Map<Character, Integer> result = new TreeMap<Character, Integer>();
 
         // 97 - 122
         int asciiStart = 97;
@@ -18,8 +22,8 @@ public class MapExercises {
         }
         return result;
     }
-    public TreeMap<Integer, Integer> squares(ArrayList<Integer> nums) {
-        TreeMap<Integer, Integer> result = new TreeMap<Integer, Integer>();
+    public Map<Integer, Integer> squares(List<Integer> nums) {
+        Map<Integer, Integer> result = new TreeMap<Integer, Integer>();
         if (nums.isEmpty()) {
             return result;
         }
@@ -36,7 +40,7 @@ public class MapExercises {
 
         return result;
     }
-    public TreeMap<Character, Integer> countWords(ArrayList<String> words) {
+    public Map<Character, Integer> countWords(List<String> words) {
         TreeMap<Character, Integer> result = new TreeMap<Character, Integer>();
         if (words.isEmpty()) {
             return result;
